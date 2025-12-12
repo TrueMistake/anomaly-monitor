@@ -1,7 +1,8 @@
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
   experimental: {
-    appDocumentPreloading: true,
+    optimizePackageImports: ['@tanstack/react-query'],
   },
 };
 

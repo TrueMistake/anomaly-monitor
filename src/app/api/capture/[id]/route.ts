@@ -3,9 +3,9 @@ import { mockAnomalies } from '@/shared/lib/mock-anomalies';
 
 export async function POST(
   request: Request,
-  { params }: { params: Promise<{ id: string }> }  // ← Promise!
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const { id } = await params;  // ← ОБЯЗАТЕЛЬНО await!
+  const { id } = await params;
   
   const randomFail = Math.random() < 0.3;
   

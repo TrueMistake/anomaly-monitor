@@ -1,4 +1,5 @@
 import { AnomaliesResponseSchema } from '@/entities/anomaly/types';
+import type { Anomaly } from '@/entities/anomaly/types';
 
 export async function fetchAnomalies(): Promise<Anomaly[]> {
   const response = await fetch('/api/anomalies');
